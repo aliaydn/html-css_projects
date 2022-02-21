@@ -1,0 +1,124 @@
+body, html{
+    height: 100%;
+    margin: 0; /*html nesnelerinin birbiri ile olan mesafelerini belirtir*/
+    padding: 0; /*özelliğini içeriğin etrafında boşluk oluşturmak için kullanırız*/
+    box-sizing: border-box; /*özelliği bize kutunun genişliğini; border-box: Genişlik veya yükseklik değeri padding ve border değerlerinide içerir.*/
+    font-family: 'Lato', sans-serif;
+    font-weight: 400; /*font-weight yazının kalınlığını belirler.*/
+    line-height: 1.8rem; /*Yazı tipinin ne kadar kalın ya da ince görüneceği belirlenir*/
+    color: #666;    
+}
+.container-image1,
+.container-image2,
+.container-image3,
+.container-image4{
+    background-position: center; /*background-position özelliği background-image ile belirlenen resmin başlangıç noktasını belirler.*/
+    background-size: cover; /*background-size özelliği background-image ile tanımlanan resmin boyutlarını tanımlamamıza yarar.
+    İki değer tanımlandığında ilk değer genişlik için ikinci değer yükseklik için uygulanır, tek değer atanmış ise hem genişlik hemde yükseklik için bu değer geçerlidir demektir.*/
+    background-repeat: no-repeat;/*arka plan olarak eklenen resmin hangi eksende tekrar edip ya da etmemesini düzenler. no-repeat;Görseli tekrarlamaz.*/
+    background-attachment: fixed;/*özelliği ile arka plan olarak kullanılan resmin,sayfa hareket ettirildiğinde sabit yada yüzer durumda olup olmamasını kontrol etmek için kullanılır..
+    fixed;Zemine eklenen resmin sabit durması sağlanır. scroll;Sayfa hareket ettirilirken kaydırma çubuğu gösterilir. Varsayılan değeridir.*/
+    opacity: 0.70;/*şeffaf görüntüler elde etmek için kullanılır.*/
+    display: flex;/*display ile bir block etikete ya da tam tersi olarak block bir etiketi de inline etikete çevirebiliriz
+    Inline etiketlerden olan <a> ve <span> etiketlerini 
+    Block etiketlerden olan <div> etiketleri*/
+    align-items: center;/*özelliği ile bir HTML elemanının içerisindeki alt elemanlarını hizalama ve konumlandırma işlemleri için kullanabiliriz*/
+    justify-content: center;/*özelliğini esnek kutu modelinde kapsayıcı kutunun elemanlarının genişliği kabı doldurmadığında değişik hizalama seçenekleri sunar.*/
+}
+.container-image1{
+    background-image: url(./images/bg1.jpg);
+    min-height: 100%;/*özelliği ile bir html elemanına minumum yükseklik tanımlanabilir.*/
+}
+.container-image2{
+    background-image: url(./images/bg2.jpg);
+    min-height: 80%;
+}
+.container-image3{
+    background-image: url(./images/bg3.jpg);
+    min-height: 80%;
+}
+.container-image4{
+    background-image: url(./images/bg4.jpg);
+    min-height: 80%;
+}
+.container-heading-logo{
+    width: 30%;
+    margin: 1rem;
+}
+.heading-container{
+    text-align: center;/*Html sayfalarımızda yazıları hizalamak için text-align özelliğini kullanırız*/
+    font-size: 3rem;/*<font> etiketi içerisinde bulunan metinin büyüklüğünü belirtir*/
+    letter-spacing: 0.5rem;/*Harfler arasındaki boşluk değerini belirlemek için kullanılır.*/
+    color: white;
+}
+.container_heading-big{
+    background-color: black;
+    padding: 2rem;
+    border-top-left-radius: 2rem;/*özelliği ile html elemanlarının sol üst köşesinin sitili belirlenebilir*/
+    border-bottom-right-radius: 2rem;/*özelliği ile bir html elemanının sağ alt kenarının kavisi ayarlanabilir.*/
+    outline: 0.5rem inset purple;/*Outline özelliği ile çizgilerin stil, renk ve kalınlığı belirlenir*/
+    outline-offset: 1rem;/*Outline-offset özelliği ile de dış çizgi ile border arasındaki uzaklık belirlenir.*/
+    text-transform: uppercase;/*bir metnin büyük-küçük harf ayarlarını yapmak için kullanınan bir CSS özelliğidir
+    lowercase; uygulanan metindeki tüm harfleri küçük harfe çevirir.
+    uppercase; uygulanan metindeki tüm harfleri büyük harfe çevirir.
+    capitalize; uygulanan metindeki her kelimenin ilk harfini büyük harfe çevirir.
+    none; uygulanan metindeki küçük-büyük harfleri aynı girildiği gibi bırakır.
+    */
+    line-height: 5rem;
+}
+.container-heading-small{
+    background-color: black;
+    padding: 0.7rem;
+    border-top-left-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+    outline: 0.4rem inset purple;
+    outline-offset: 0.2rem;
+    text-transform: capitalize;
+    line-height: 5rem;
+}
+.section{
+    text-align: center;
+    padding: 3rem 5rem;
+}
+.section-light{
+    background-color: rgb(241, 241, 241);
+    color: #666;
+}
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+@media (max-width:760px){
+    .heading-container{
+        font-size: 2rem;
+    }
+    .container_heading-big{
+        padding: 1rem;
+        border-top-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        outline: 0.4rem inset purple;
+        outline-offset: 0.6rem;
+        line-height: 2.5rem;
+    }
+    .container-heading-small{
+        padding: 0.4rem;
+        border-top-left-radius: 0.3rem;
+        border-bottom-right-radius: 0.3rem;
+        outline: 0.2rem inset purple;
+        outline-offset: 0.1rem;
+        line-height: 2.4rem;
+    }
+    .section{
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 568px){
+    .container-image1,
+    .container-image2,
+    .container-image3,
+    .container-image4{
+        background-attachment: scroll;
+    }
+}
+
+    
