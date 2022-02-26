@@ -1,0 +1,68 @@
+<<<<<<< HEAD
+.nav{
+    height: 10vh;
+    padding: 1rem;
+<<<<<<< HEAD
+=======
+
+>>>>>>> c29ed097b7313b6b598dbb6ab3469987564dbfa1
+    &__list{
+        text-align: right;
+    }
+
+    &__item{
+        display: inline;
+        padding: 1rem;
+    }
+
+<<<<<<< HEAD
+    &__link{
+=======
+    &__link {
+>>>>>>> c29ed097b7313b6b598dbb6ab3469987564dbfa1
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 500;
+=======
+//*****************************************************
+//*   NAV
+//*****************************************************
+
+//* Grandparent class (nav)
+.nav {
+  padding: 1rem;
+  height: 10vh;
+
+  &__list {
+    text-align: right;
+  }
+  &__item {
+    display: inline;
+    padding-right: 1rem;
+  }
+  &__link {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+>>>>>>> a4a87fe8e1be5189dcc4f38ea03055c8aeccd2e5
+
+    @include transition(1s);
+    &:hover {
+      color: blue;
+    }
+
+    &--active {
+      color: $secondary-color;
+    }
+<<<<<<< HEAD
+<<<<<<< HEAD
+}
+=======
+}
+
+
+>>>>>>> c29ed097b7313b6b598dbb6ab3469987564dbfa1
+=======
+  }
+}
+>>>>>>> a4a87fe8e1be5189dcc4f38ea03055c8aeccd2e5

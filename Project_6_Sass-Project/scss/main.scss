@@ -1,0 +1,54 @@
+//*****************************************************
+//*   MAIN SCSS
+//*****************************************************
+
+<<<<<<< HEAD
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+=======
+@import './base/reset', './abstracts/mixins', './abstracts/variables';
+@import './pages/home', './pages/about', './pages/projects', './pages/contact';
+@import './components/nav', './components/footer', './components/responsive';
+>>>>>>> a4a87fe8e1be5189dcc4f38ea03055c8aeccd2e5
+
+//! Fontawesome Library
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+<<<<<<< HEAD
+ 
+body{
+    color: $text-color;
+    background-color: $primary-color;
+    height: 100vh;
+    font-family: $font-family;
+    line-height: 1;
+=======
+body {
+  font-family: $font-family;
+  line-height: 1;
+  color: $text-color;
+  background-color: $primary-color;
+  height: 100vh;
+>>>>>>> a4a87fe8e1be5189dcc4f38ea03055c8aeccd2e5
+}
+
+//* Links
+a {
+  text-decoration: none;
+  color: $text-color;
+}
+
+<<<<<<< HEAD
+
+h1,h2,h3{
+    font-weight: 400;
+}
+
+=======
+//* Headings
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+>>>>>>> a4a87fe8e1be5189dcc4f38ea03055c8aeccd2e5

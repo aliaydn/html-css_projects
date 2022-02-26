@@ -1,0 +1,52 @@
+<<<<<<< HEAD
+.home-bgImg-container{
+
+    @include bgImage(100vh, $main-bgImage-path )
+=======
+//*****************************************************
+//*   HOME PAGE
+//*****************************************************
+.home-bgImg-container {
+  @include bgImage(100vh, $main-bgImage-path);
+>>>>>>> a4a87fe8e1be5189dcc4f38ea03055c8aeccd2e5
+}
+.home {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  &__name {
+    font-size: 5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #fff;
+
+<<<<<<< HEAD
+
+.home{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    &__name{
+        font-size: 5rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #fff;
+
+        &--last{
+            color: red;
+            font-weight: 700;
+        }
+=======
+    &--last {
+      color: red;
+      font-weight: 700;
+>>>>>>> a4a87fe8e1be5189dcc4f38ea03055c8aeccd2e5
+    }
+  }
+}
